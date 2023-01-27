@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Game Score</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        
+                
+        <div class="container">
+            
+            <div class="column">
+                <h3>HOME</h3>
+                    <h2 class="score" id="home-score">0</h2>
+                 
+                        <div class="score-btns">
+                            <button onclick="add1home()">+1</button>
+                            <button onclick="add2home()">+2</button>
+                            <button onclick="add3home()">+3</button>
+                        </div>           
+            </div> 
+            
+            <div class="column">
+            
+                <div class="game-period" id="period">0</div>
+                    <h2 class="title-period">PERIOD</h2>
+            </div>
+            
+            
+            <div class="column">
+                <h3>GUEST</h3>
+                    <h2 class="score" id="guest-score">0</h2>
+                        
+                        <div class="score-btns">
+                            <button onclick="add1guest()">+1</button>
+                            <button onclick="add2guest()">+2</button>
+                            <button onclick="add3guest()">+3</button>
+                        </div>      
+            </div>
+            
+        </div> <!-- container -->
+        
+        
+        <div class="fouls-container">
+            <div class="fouls-column">
+                <h3 class="fouls-heading">FOULS</h3>
+                    <button class="fouls-count" id="home-foul" onclick="addfoulhome()">0</button>
+            </div>
+            
+            <div class="fouls-column">
+                <h3 class="fouls-heading">FOULS</h3>
+                    <button class="fouls-count" id="guest-foul" onclick="addfoulguest()">0</button>
+            </div>
+        </div>
+        
+        <div class="reset-btns">
+                <button class="new-next-btn" id="newgame-btn" onclick="newgame()">New Game</button>
+                <button class="new-next-btn" id="nextperiod-btn" onclick="nextperiod()">Next Round</button>
+        </div> <!-- new game -->
+        
+        
+        
+        <script src="main.js"></script>
+    </body>
+</html>
